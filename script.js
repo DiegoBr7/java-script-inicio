@@ -12,15 +12,31 @@ return(n1+n2)/2
 
 }
 
+function passou (media){
+
+if(media>7){
+    resultado = "aprovado"
+}else{
+
+    return resultado = "reprovado"
+}
+
+}
+
 for(var index in nomes){
 
-    console.log(notasA[index]+
+var nota1 = notasA[index];
+var nota2 = notasB[index];
+
+var m = media(nota1,nota2)
+
+    console.log(nomes[index]+
+        nota1+
         "-"+
-        notasA[index]+
-        "-" +
-        notasB[index]+
+        nota2+
         "-"+
-        media(notasA[index],notasB[index])
-        );
+        m +
+        "-"+
+        passou(m));
 
 }
